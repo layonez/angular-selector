@@ -4,3 +4,43 @@
 * {
   border-radius: 0.25rem;
 }
+
+app-root {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+app-root > * {
+  flex: 1 100%;
+}
+.main {
+  height: 60em;
+}
+@media all and (max-width: 800px) {
+  .aside {
+    flex: 1 auto;
+    padding-bottom: 6em;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 2 0px;
+  }
+  .aside {
+    order: 1;
+    max-width: 20rem;
+    padding-bottom: 0em;
+  }
+  .main {
+    order: 2;
+  }
+  .footer {
+    order: 4;
+  }
+  .selector {
+    position: absolute;
+  }
+}

@@ -1,7 +1,6 @@
 .selector {
   background-color: lightblue;
-  padding: 1rem;
-  position: absolute;
+  margin: 2rem;
   height: 60%;
 }
 .header {

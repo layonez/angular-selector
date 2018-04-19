@@ -1,11 +1,10 @@
-<main role="main" class="container">
+<main role="main" class="main">
   <h1 class="mt-5">Angular 5 selector</h1>
   <p class="lead">Компонент позволяет выбирать и перемещать элементы между двумя списками. Api компонента предоставляет возможность подписки
     на перемещения элементов.</p>
   <app-selector (onSelectionChanged)="onSelectionChanged($event)"></app-selector>
-  <app-messages-list></app-messages-list>
 </main>
-
+<app-messages-list class="aside"></app-messages-list>
 <footer class="footer">
   <div class="container">
     <span class="text-muted">Developed by Artem Mozgovoy</span>

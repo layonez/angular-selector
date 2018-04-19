@@ -1,27 +1,30 @@
 # AngularSelector
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+Basically this is one component project with simple wrapper around it to show its API.
 
-## Development server
+Angular 5 for most powerfull frontend framework of all times
+Bootstrap 4 for better styling
+rxjs for async data loading
+ng2-dragula for drag and drop functionality
+
+# Getting started
+
+Make sure you have the [Angular CLI](https://github.com/angular/angular-cli#installation) installed globally, then run `npm install` to resolve all dependencies (might take a minute).
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+### Building the project
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Project itself contains only angular cli automatically generated unit tests but still you can run them by
+runing `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Plans
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+In current component version there is no custom styling API nor external data loading API.
+Also there is drag&drop which only supports one item selection.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Those problems are not so complicated but mostly needs too much time of my full day work week :(
