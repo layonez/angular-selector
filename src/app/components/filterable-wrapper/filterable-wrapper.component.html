@@ -1,0 +1,15 @@
+<div class="filterable-wrapper">
+  <div class="filter">
+    <div class="input-group">
+      <input [(ngModel)]="filter" (ngModelChange)="filterItems()" type="text" class="form-control" placeholder="фильтр" aria-label="фильтр по имени"
+        aria-describedby="basic-addon1">
+    </div>
+
+  </div>
+  <div class="list-group" [dragula]='dragulaBagName' [dragulaModel]='items'>
+    <a class="list-group-item list-group-item-action" [attr.data-id]="item.id" [attr.data-name]="item.name" *ngFor="let item of displayedItems; trackBy: trackByFn"
+      [class.selected]="selectedItems.includes(item)" (click)="onSelect(item)">
+      {{item.name}}
+    </a>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="selector">
+  <div class="header">
+  </div>
+  <div class="content">
+    <app-filterable-wrapper class="all-items-list" (itemDnD)="onItemChanged($event)" [items]="items" [dragulaBagName]='"itemsBag"'
+      #allItemsList></app-filterable-wrapper>
+    <div class="actions-area">
+      <button type="button" [disabled]="!allItemsList.selectedItems.length" (click)="addToSelection(allItemsList.selectedItems)"
+        class="btn btn-info actionButton">&gt;</button>
+      <button type="button" [disabled]="!selectedItemsList.selectedItems.length" (click)="removeFromSelection(selectedItemsList.selectedItems)"
+        class="btn btn-info actionButton">&lt;</button>
+    </div>
+    <app-filterable-wrapper class="selected-items-list " [items]="selectedItems " [dragulaBagName]='"itemsBag"' #selectedItemsList></app-filterable-wrapper>
+  </div>
+  <div class="footer ">
+  </div>
+</div>

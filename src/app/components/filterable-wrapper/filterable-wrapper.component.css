@@ -1,0 +1,27 @@
+.selected {
+  background: lightcoral;
+}
+
+.filter {
+  padding-bottom: 0.5em;
+  order: 1;
+  flex: 1 0px;
+}
+
+.filter > div > input {
+  padding: 0.75rem;
+}
+
+.filterable-wrapper {
+  background-color: lightblue;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.list-group {
+  flex: 1 100%;
+  order: 2;
+  background: white;
+  overflow-y: auto;
+}

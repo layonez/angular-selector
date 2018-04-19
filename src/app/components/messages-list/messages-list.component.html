@@ -1,0 +1,9 @@
+<div class="list-group sidePanel">
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary panel-header">
+    <h4>Лог действий</h4>
+    <button type="button" class="btn btn-danger" (click)="messageService.clear()">X</button>
+  </a>
+  <hr />
+  <a *ngFor="let message of messageService.messages" href="#" [ngClass]="'list-group-item-' + (message.type === 0 ? 'succes':'danger')"
+    class="list-group-item list-group-item-action list-group-item-success">{{getMessageText(message)}}</a>
+</div>
