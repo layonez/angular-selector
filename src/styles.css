@@ -40,7 +40,4 @@ app-root > * {
   .footer {
     order: 4;
   }
-  .selector {
-    position: absolute;
-  }
 }
