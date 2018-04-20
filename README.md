@@ -1,3 +1,7 @@
+# DEMO
+
+Check out on mobile and desktop https://layonez.github.io/
+
 # AngularSelector
 
 Basically this is one component project with simple wrapper around it to show its API.
